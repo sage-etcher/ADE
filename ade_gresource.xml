@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/au/com/itelsoft/ade">
+<file>gxe_go_icon_20.png</file>
+<file>gxe_pause_icon_20.png</file>
+<file>gxe_reset_icon_20.png</file>
+<file>gxe_stop_icon_20.png</file>
+<file>star_7point_red.png</file>
+<file preprocess="xml-stripblanks">break_top.glade</file>
+<file preprocess="xml-stripblanks">debugtop.glade</file>
+<file preprocess="xml-stripblanks">disks.glade</file>
+<file preprocess="xml-stripblanks">gxe_top.glade</file>
+<file preprocess="xml-stripblanks">ioports.glade</file>
+<file preprocess="xml-stripblanks">mem_top.glade</file>
+<file preprocess="xml-stripblanks">slot.glade</file>
+  </gresource>
+</gresources>
