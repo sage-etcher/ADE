@@ -1,0 +1,8 @@
+#0 (default)		Video Screen
+
+#1
+
+#2			Parallel Port
+
+#3			Serial Port
+
