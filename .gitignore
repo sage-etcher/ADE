@@ -1,11 +1,34 @@
+
+# temporary and cache files
 **.swp
 **.bak
 
+.cache/**
+
+# local specifiec files
 compile_commands.json
 
+# build files
 **.o
 **.d
 **.out
 
-.cache/**
-
+# specific build files
+**/[0-9][0-9][0-9][0-9][0-9][0-9]
+/ade
+src/ade_resources.c
+src/north_star_tools/chk_sector
+src/north_star_tools/compact
+src/north_star_tools/jdz80
+src/north_star_tools/mkfs.ns
+src/north_star_tools/mkhd
+src/north_star_tools/nsfd2u
+src/north_star_tools/nsfdls
+src/north_star_tools/nsfilecalc
+src/north_star_tools/nshdbm
+src/north_star_tools/nshdcp
+src/north_star_tools/nshdinfo
+src/north_star_tools/nshdls
+src/north_star_tools/printnsb
+src/north_star_tools/u2nsfd
+src/north_star_tools/unskew-hd-image
