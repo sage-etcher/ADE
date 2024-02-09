@@ -1,0 +1,10 @@
+**.swp
+**.bak
+
+compile_commands.json
+
+**.o
+**.d
+**.out
+
+
