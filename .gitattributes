@@ -1,0 +1,23 @@
+*         text=auto  eol=lf    linguist-vendored
+
+**.txt    text       eol=lf
+**.c      text       eol=lf    linguist-detectable
+**.h      text       eol=lf    linguist-detectable
+
+**.asm    text       eol=crlf
+**.hex    text       eol=crlf
+
+**.bas    text       eol=crlf  linguist-detectable
+**.glade  text       eol=lf    linguist-detectable
+
+**.png    binary
+**.pdf    binary
+
+**.com    binary
+
+**.nsb    binary
+
+**.NSI    binary
+**.nsi    binary
+**.NHD    binary
+
