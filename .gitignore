@@ -7,4 +7,5 @@ compile_commands.json
 **.d
 **.out
 
+.cache/**
 
