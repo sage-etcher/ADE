@@ -1,0 +1,41 @@
+North Star DOS and N* CP/M have different options for varying the number of 
+drives and drive types
+
+
+NS GDOS (Installed Drives, Stepping Speed)
+=====
+
+                   Drive Number        Fast/Normal Stepping
+
+   |    Bit No. 7         1        |           0=Normal      Bit No. 0     ^
+   |    Bit No. 6         2        |           1=Fast        Bit No. 1     |
+   |    Bit No. 5         3        |           1             Bit No. 2     |
+   V    Bit No. 4         4        |           1             Bit No. 3     |
+
+So if you have drives 1 and 2, and drive 2 is a fast stepping drive,
+bits 7,6 and 1 are set ( = C2 (hex) )
+
+Notice that Drive Number bits begin with MSB, stepping speed bits begin
+with the LSB
+
+
+This hardware information byte resides at F834 hex in GDOS.
+
+This is byte at 0834 of the GHDOS disk-image file
+
+
+
+
+CP/M (Number of Floppy Drives)
+=====
+
+The valid range is 0-1, 0 = one drive, 1 = two drives.
+The drive byte is situated at Disk Sector 7, offset 01E8(hex). This is byte
+number 0FE8 in the CP/M disk-image file.
+
+In the standard Advantage 64K CP/M vers. 1.2.0, this byte is located in RAM at E6E8.
+
+
+
+
+

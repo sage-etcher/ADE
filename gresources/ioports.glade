@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="ioports_top">
+    <property name="name">ioports_top</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">I/O Ports Attach/Detach Configuration</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="deletable">False</property>
+    <property name="gravity">east</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="ioports_grid">
+        <property name="name">ioports_grid</property>
+        <property name="width_request">400</property>
+        <property name="height_request">220</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="sio_in_m_label">
+            <property name="name">sio_in_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">SIO  IN:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sio_out_m_label">
+            <property name="name">sio_in_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">SIO OUT:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_in_label">
+            <property name="name">pio_in_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">PIO  IN:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_in_label1">
+            <property name="name">pio_out_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">PIO OUT:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="sio_in_box">
+            <property name="name">sio_in__box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="sio_in_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">sio_in__change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="attach_new_sio_in" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="sio_in_detach">
+                <property name="label" translatable="yes">Detach</property>
+                <property name="name">sio_in__eject</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="detach_sio_in_event" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="sio_out_box">
+            <property name="name">sio_out__box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="sio_out_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">sio_out__change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="attach_new_sio_out" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="sio_out_detach">
+                <property name="label" translatable="yes">Detach</property>
+                <property name="name">sio_out__eject</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="detach_sio_out_event" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="pio_in_box">
+            <property name="name">pio_in_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="pio_in_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">pio_in_change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="attach_new_pio_in" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="pio_in_detach">
+                <property name="label" translatable="yes">Detach</property>
+                <property name="name">pio_in_detach</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="detach_pio_in_event" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="pio_out_box">
+            <property name="name">pio_out_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="pio_out_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">pio_out_change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="attach_new_pio_out" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="pio_out_detach">
+                <property name="label" translatable="yes">Detach</property>
+                <property name="name">pio_out_detach</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="detach_pio_out_event" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ioports_hide_button">
+            <property name="label" translatable="yes">Dismiss</property>
+            <property name="name">ioports_hide_button</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="ioports_hide" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">431</property>
+            <property name="y">223</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sio_in_fn">
+            <property name="name">sio_in_fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="label" translatable="yes">Unconnected</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">64</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sio_out_fn">
+            <property name="name">sio_in_fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="label" translatable="yes">Unconnected</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">64</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_in_fn">
+            <property name="name">pio_in_fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Unconnected</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_out_fn">
+            <property name="name">pio_in_fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">Unconnected</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
