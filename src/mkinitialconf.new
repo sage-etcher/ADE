@@ -2,13 +2,7 @@
 #
 # $1 is install path
 #
-INSTALL_PATH=$1
-if [[ "$2" != "" ]]
-then PREFIX=$2
-else PREFIX=$INSTALL_PATH/advantage
-fi
-
-CF=$PREFIX/ade.conf
+CF=$1/ade.conf
 DATE=$(date +%y%m%d)
 mkdir -p $(dirname $CF)
 #
@@ -17,10 +11,10 @@ echo "#####" >> $CF
 echo "##### Avoid Editing This File Manually. Any Changes You Make May" >> $CF
 echo "##### Be Automatically Overwritten at Any Time." >> $CF
 echo " " >> $CF
-echo "hdd           $1/disks/ADV_SG5A.NHD " >> $CF
-echo "fd1           $INSTALL_PATH/advantage/disks/CPMBASIC_120A1.NSI" >> $CF
+echo "hdd           /usr/local/share/advantage/disks/ADV_SG5A.NHD " >> $CF
+echo "fd1           /usr/local/share/advantage/disks/CPMBASIC_120A1.NSI" >> $CF
 echo "fd2           " >> $CF
-echo "disk_dir      $INSTALL_PATH/advantage/disks/" >> $CF
+echo "disk_dir      /usr/local/share/advantage/disks/" >> $CF
 echo "debug_level   0000" >> $CF
 echo "break_addr    0000" >> $CF
 echo "break_on      off" >> $CF
@@ -29,8 +23,8 @@ echo "trap_on       off" >> $CF
 echo "hd_delay      off" >> $CF
 echo "capslock      off" >> $CF
 echo "cursor_lock   off" >> $CF
-echo "log           $INSTALL_PATH/advantage/xlog" >> $CF
-echo "screenlog     $INSTALL_PATH/advantage/screenlog" >> $CF
+echo "log           /usr/local/share/advantage/xlog" >> $CF
+echo "screenlog     /usr/local/share/advantage/screenlog" >> $CF
 echo "slot_hdc      6" >> $CF
 echo "slot_sio      2" >> $CF
 echo "slot_pio      1" >> $CF

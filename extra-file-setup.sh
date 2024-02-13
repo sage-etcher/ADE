@@ -18,5 +18,5 @@ glib-compile-resources  --sourcedir=gresources --target=src/ade_resources.c \
 src/mklauncher.new $EXEC $ICON $DESTDIR
 
 # extra/ade.conf
-src/mkinitialconf.new $PREFIX $DESTDIR
+src/mkinitialconf.new $DESTDIR
 
