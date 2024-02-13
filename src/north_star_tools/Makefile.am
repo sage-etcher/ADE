@@ -15,16 +15,24 @@ bin_PROGRAMS = chk_sector \
 			   u2nsfd \
 			   unskew-hd-image
 
-chk_sector_SOURCES = chk_sector.c
+chk_sector_SOURCES = chk_sector.c \
+					 nsd.h
 
 compact_SOURCES = compact.c \
 				  nsd.h
 
-jdz80_SOURCES = jdz80.c
+jdz80_SOURCES = jdz80.c \
+				nsd.h
 
-mkfs_ns_SOURCES = mkfs.ns.c
+mkfs_ns_SOURCES = mkfs.ns.c \
+				  nsd.h
 
-mkhd_SOURCES = mkhd.c
+mkhd_SOURCES = mkhd.c \
+			   transient_hzn.c \
+			   transient_adv.c \
+			   transient_hzn.h \
+			   transient_adv.h \
+			   nsd.h
 
 nsfd2u_SOURCES = nsfd2u.c \
 				 nsd.h
@@ -32,21 +40,28 @@ nsfd2u_SOURCES = nsfd2u.c \
 nsfdls_SOURCES = nsfdls.c \
 				 nsd.h
 
-nsfilecalc_SOURCES = nsfilecalc.c
+nsfilecalc_SOURCES = nsfilecalc.c \
+					 nsd.h
 
-nshdbm_SOURCES = nshdbm.c
+nshdbm_SOURCES = nshdbm.c \
+				 nsd.h
 
-nshdcp_SOURCES = nshdcp.c
+nshdcp_SOURCES = nshdcp.c \
+				 nsd.h
 
-nshdinfo_SOURCES = nshdinfo.c
+nshdinfo_SOURCES = nshdinfo.c \
+				   nsd.h
 
-nshdls_SOURCES = nshdls.c
+nshdls_SOURCES = nshdls.c \
+				 nsd.h
 
 printnsb_SOURCES = printnsb.c \
+				   nsd.h \
 				   print_nsb_tokens.h
 
 u2nsfd_SOURCES = u2nsfd.c \
 				 nsd.h
 
-unskew_hd_image_SOURCES = unskew-hd-image.c
+unskew_hd_image_SOURCES = unskew-hd-image.c \
+						  nsd.h
 

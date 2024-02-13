@@ -23,8 +23,10 @@
 FILE *hd;
 int transient_len;
 
-#include "transient_hzn.c"	/* data with code of the Horizon   TRANSIENT file */
-#include "transient_adv.c"	/* data with code of the Advantage TRANSIENT file */
+//#include "transient_hzn.c"	/* data with code of the Horizon   TRANSIENT file */
+//#include "transient_adv.c"	/* data with code of the Advantage TRANSIENT file */
+#include "transient_hzn.h"	/* data with code of the Horizon   TRANSIENT file */
+#include "transient_adv.h"	/* data with code of the Advantage TRANSIENT file */
 
 unsigned char bitmap[0x200];
 int hzn_adv_flag;

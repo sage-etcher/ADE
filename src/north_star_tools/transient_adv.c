@@ -7,6 +7,9 @@
 /* This particular piece of code is used only by the 'mkhd' program. As such it is not      */
 /* critical for use at other times.                                                         */
 
+#include "transient_adv.h"
+
+
 unsigned char transient_adv_bin[0x3600] = {
   0xc3, 0x22, 0x01, 0xc3, 0x00, 0xf7, 0x31, 0x4e, 0x20, 0x21, 0x59, 0x59,
   0x22, 0x00, 0xf8, 0x22,
