@@ -1,6 +1,7 @@
 #!/bin/bash
 # Generate files that may be wanted, that aren't covered by automake.
 
+DESTDIR=./extra
 PREFIX=/usr/local
 BIN_DIR=$PREFIX/bin
 DATA_DIR=$PREFIX/share/advantage
@@ -13,9 +14,9 @@ src/mk_resource_xml ade
 glib-compile-resources  --sourcedir=gresources --target=src/ade_resources.c \
 --generate-source ade_gresource.xml
 
-# advantage.desktop
-src/mklauncher.new $(EXEC) $(ICON)
+# extra/advantage.desktop
+src/mklauncher.new $EXEC $ICON $DESTDIR
 
-# ade.conf
-src/mkinitialconf.new $(PREFIX)
+# extra/ade.conf
+src/mkinitialconf.new $PREFIX $DESTDIR
 

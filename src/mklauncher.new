@@ -10,7 +10,12 @@ then ICON=$2
 else ICON=.star_7point_red.png
 fi
 
-DL=/usr/share/applications/advantage.desktop
+if [[ "$3" != "" ]]
+then PREFIX=$3
+else PREFIX=/usr/share/applications
+fi
+
+DL=$PREFIX/advantage.desktop
 
 # Desktop Icon
 rm -f $DL

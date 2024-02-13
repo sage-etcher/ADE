@@ -1,7 +1,7 @@
 
 SUBDIRS = src/north_star_tools
 
-bin_PROGRAMS = ade mkhd
+bin_PROGRAMS = ade
 
 ade_SOURCES = src/ade_base.c \
 			  src/ade_breaktrap.c \
@@ -49,4 +49,10 @@ dist_adedocu_DATA = documentation/*.pdf
 
 adeinfodir = $(adedatadir)/info
 dist_adeinfo_DATA = info/*
+
+adeconfdir = $(adedatadir)
+dist_adeconf_DATA = extra/ade.conf
+
+desktopdir = $(prefix)/share/applications
+dist_desktop_DATA = extra/advantage.desktop
 
