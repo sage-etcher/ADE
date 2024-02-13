@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkImage" id="goimage">
+    <property name="name">goimage</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">gxe_go_icon_20.png</property>
+  </object>
+  <object class="GtkImage" id="pauseimage">
+    <property name="name">pauseimage</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">gxe_pause_icon_20.png</property>
+  </object>
+  <object class="GtkImage" id="resetimage">
+    <property name="name">resetimage</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">gxe_reset_icon_20.png</property>
+  </object>
+  <object class="GtkImage" id="stopimage">
+    <property name="name">stopimage</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">gxe_stop_icon_20.png</property>
+  </object>
+  <object class="GtkWindow" id="topwindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">ADE  - North Star ADVANTAGE Emulator</property>
+    <property name="default_width">640</property>
+    <property name="default_height">480</property>
+    <signal name="destroy-event" handler="topwindow_destroy" swapped="no"/>
+    <signal name="key-press-event" handler="main_key_q" swapped="no"/>
+    <signal name="key-release-event" handler="main_key_release" swapped="no"/>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="fixgrid">
+        <property name="name">fixgrid</property>
+        <property name="width_request">735</property>
+        <property name="height_request">660</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkMenuBar" id="menubar">
+            <property name="name">menubar</property>
+            <property name="width_request">20</property>
+            <property name="height_request">10</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkMenuItem" id="settings">
+                <property name="name">settings</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">9</property>
+                <property name="margin_right">9</property>
+                <property name="label" translatable="yes">ADE Options</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="settings_child">
+                    <property name="name">settings_child</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="do_disks">
+                        <property name="label">Manage Disks</property>
+                        <property name="name">do_disks</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="disks_unhide" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="capslock">
+                        <property name="label">Toggle CapsLock ON/OFF</property>
+                        <property name="name">capslock</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="toggle_capslock" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="cursor_lock">
+                        <property name="label">Toggle Cursor Lock ON/OFF</property>
+                        <property name="name">cursor_lock</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="toggle_cursor_lock" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="hd_delay">
+                        <property name="label">Toggle HD Delay ON/OFF</property>
+                        <property name="name">hd_delay</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="activate" handler="toggle_hd_delay" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="get_aread">
+                        <property name="label" translatable="yes">Use 'aread' Input</property>
+                        <property name="name">get_aread</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="right_justified">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="activate" handler="pick_aread_file" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="slot_setup">
+                        <property name="label">Slot Card Setup</property>
+                        <property name="name">slot_setup</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="slot_unhide" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="set_io_port">
+                        <property name="label">Allocate I/O Port Files</property>
+                        <property name="name">set_io_port</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="ioports_unhide" swapped="no"/>
+                      </object>
+                    </child>
+
+                  </object>
+                </child>
+
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkMenuItem" id="settings_workshop">
+                <property name="name">settings_workshop</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">9</property>
+                <property name="margin_right">9</property>
+                <property name="label" translatable="yes">WorkShop</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="workshop1">
+                    <property name="name">workshop1</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="RAM_activity">
+                        <property name="label" translatable="yes">RAM Activity</property>
+                        <property name="name">RAM_activity</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="right_justified">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="activate" handler="mem" swapped="no"/>
+                        <signal name="activate-item" handler="mem" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="debuglevel">
+                        <property name="label" translatable="yes">Set Debug Level</property>
+                        <property name="name">debuglevel</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="right_justified">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="activate" handler="set_debug" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="breaktrap">
+                        <property name="label" translatable="yes">Break/Trap Address</property>
+                        <property name="name">breaktrap</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="right_justified">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                        <signal name="activate" handler="break_unhide" swapped="no"/>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="GtkImageMenuItem" id="siotest">
+                        <property name="label">SIO Test Toggle</property>
+                        <property name="name">siotest</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_stock">False</property>
+                        <signal name="activate" handler="sio_test_toggle" swapped="no"/>
+                      </object>
+                    </child>
+
+                  </object>
+                </child>
+
+              </object>
+            </child>
+
+          </object>
+          <packing>
+            <property name="x">70</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkImage" id="ade_win">
+            <property name="name">ade_win</property>
+            <property name="width_request">640</property>
+            <property name="height_request">480</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+          </object>
+          <packing>
+            <property name="x">47</property>
+            <property name="y">46</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="reset_button">
+            <property name="label" translatable="yes">reset</property>
+            <property name="name">reset_button</property>
+            <property name="width_request">30</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">resetimage</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="reset_action" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">560</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkScrolledWindow" id="winstatusscroll">
+            <property name="name">winstatusscroll</property>
+            <property name="width_request">500</property>
+            <property name="height_request">55</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <property name="kinetic_scrolling">False</property>
+            <property name="overlay_scrolling">False</property>
+            <child>
+              <object class="GtkTextView" id="statusinfo">
+                <property name="name">statusinfo</property>
+                <property name="visible">True</property>
+                <property name="sensitive">False</property>
+                <property name="can_focus">False</property>
+                <property name="cursor_visible">False</property>
+                <property name="accepts_tab">False</property>
+              </object>
+            </child>
+
+          </object>
+          <packing>
+            <property name="x">115</property>
+            <property name="y">560</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="pause_button">
+            <property name="label" translatable="yes">pause</property>
+            <property name="name">pause_button</property>
+            <property name="width_request">25</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">pauseimage</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="pause_action" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">650</property>
+            <property name="y">560</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="exit_button">
+            <property name="label" translatable="yes">exit</property>
+            <property name="name">exit_button</property>
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">stopimage</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="exit_action" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">610</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkLabel" id="statuslabel">
+            <property name="name">statuslabel</property>
+            <property name="width_request">80</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Status</property>
+            <property name="width_chars">10</property>
+            <property name="single_line_mode">True</property>
+            <property name="max_width_chars">10</property>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">605</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="go_button">
+            <property name="label" translatable="yes">   go</property>
+            <property name="name">go_button</property>
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="image">goimage</property>
+            <property name="always_show_image">True</property>
+            <signal name="clicked" handler="go_action" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">650</property>
+            <property name="y">610</property>
+          </packing>
+        </child>
+
+      </object>
+    </child>
+
+  </object>
+</interface>

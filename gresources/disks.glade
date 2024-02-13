@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="disks_top">
+    <property name="name">disks_top</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Disk Storage Management</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center</property>
+    <property name="hide_titlebar_when_maximized">True</property>
+    <property name="type_hint">dialog</property>
+    <property name="deletable">False</property>
+    <property name="gravity">east</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="disks_grid">
+        <property name="name">disks_grid</property>
+        <property name="width_request">400</property>
+        <property name="height_request">220</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="fd1_label">
+            <property name="name">fd1_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Floppy 1:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="fd2_label">
+            <property name="name">fd2_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Floppy 2:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">120</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="hdd_label">
+            <property name="name">hdd_label</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Hard Disk:</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="fd1_box">
+            <property name="name">fd1_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="fd1_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">fd1_change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="mount_new_fd1" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="fd1_eject">
+                <property name="label" translatable="yes">Eject</property>
+                <property name="name">fd1_eject</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="umount_fd1" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="fd2_box">
+            <property name="name">fd2_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="fd2_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">fd2_change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="mount_new_fd2" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="fd2_eject">
+                <property name="label" translatable="yes">Eject</property>
+                <property name="name">fd2_eject</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="umount_fd2" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">120</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="hdh_box">
+            <property name="name">hdh_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="hdd_change">
+                <property name="label" translatable="yes">Change</property>
+                <property name="name">hdd_change</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="mount_new_hdd" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="hdd_eject">
+                <property name="label" translatable="yes">Eject</property>
+                <property name="name">hdd_eject</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <signal name="clicked" handler="umount_hdd" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">360</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="diskshidebutton">
+            <property name="label" translatable="yes">Dismiss</property>
+            <property name="name">diskshidebutton</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="disks_hide" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">419</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="fd1fn">
+            <property name="name">fd1fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="label" translatable="yes">EMPTY</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">64</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="fd2fn">
+            <property name="name">fd2fn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">EMPTY</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+            <property name="y">120</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="hdfn">
+            <property name="name">hdfn</property>
+            <property name="width_request">270</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">EMPTY</property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">68</property>
+            <property name="y">206</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="new_floppy_label">
+            <property name="name">new_floppy_label</property>
+            <property name="width_request">126</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">New 360K DSDD Floppy: </property>
+            <property name="single_line_mode">True</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">285</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="new_floppy_text">
+            <property name="name">new_floppy_text</property>
+            <property name="width_request">293</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <signal name="activate" handler="get_new_floppy_name" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">135</property>
+            <property name="y">285</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="new_floppy_button">
+            <property name="label" translatable="yes">Create</property>
+            <property name="name">new_floppy_button</property>
+            <property name="width_request">20</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="create_new_floppy" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">430</property>
+            <property name="y">285</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
