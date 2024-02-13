@@ -25,7 +25,14 @@ ade_SOURCES = src/ade_base.c \
 			  src/ade_display.c \
 			  src/ade_z80.c \
 			  src/jfuncs.c \
-			  src/ade_resources.c
+			  src/ade_resources.c \
+			  src/ade.h \
+			  src/ade_charset.h \
+			  src/ade_extvars.h \
+			  src/ade_gvars.h \
+			  src/ade_kbd_codes.h \
+			  src/advantage_keyboard_scancodes.h \
+			  src/makedate.h
 
 ade_CFLAGS = -I$(top_srcdir)/src \
 			 $(shell pkg-config --cflags gtk+-3.0)
