@@ -1,7 +1,7 @@
 
 SUBDIRS = src/north_star_tools
 
-bin_PROGRAMS = ade
+bin_PROGRAMS = ade mkhd
 
 ade_SOURCES = src/ade_base.c \
 			  src/ade_breaktrap.c \
@@ -38,7 +38,8 @@ ade_LDFLAGS = $(shell pkg-config --libs gtk+-3.0) \
 adedatadir = $(datadir)/advantage
 dist_adedata_DATA = LICENSE \
 			        README.md \
-			        AAA_GTK-based_ade_development
+			        AAA_GTK-based_ade_development \
+					src/.star_7point_red.png
 
 adediskdir = $(adedatadir)/disks
 dist_adedisk_DATA = disks/*
