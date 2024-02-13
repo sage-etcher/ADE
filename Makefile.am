@@ -31,7 +31,7 @@ ade_SOURCES = $(top_srcdir)/src/ade_base.c \
 ade_CFLAGS = -I$(top_srcdir)/src \
 			 $(shell pkg-config --cflags gtk+-3.0)
 
-ade_LDFLAGS = $(shell pkg-config --lflags gtk+-3.0) \
+ade_LDFLAGS = $(shell pkg-config --libs gtk+-3.0) \
 			  -export-dynamic \
 			  -rdynamic \
 			  -lX11
