@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/usr/local/bin/ade
+Icon=/usr/local/share/advantage/.star_7point_red.png
+Name=North Star Advantage Emulator
+Comment=North Star Advantage Emulator

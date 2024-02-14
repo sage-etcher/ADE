@@ -7,6 +7,9 @@
 /* This particular piece of code is used only by the 'mkhd' program. As such it is not      */
 /* critical for use at other times.                                                         */
 
+#include "transient_hzn.h"
+
+
 unsigned char transient_hzn_bin[0x3000] = {
   0xc3, 0x12, 0x1f, 0xc3, 0xcd, 0x21, 0xc3, 0xc2, 0x21, 0x00, 0x00, 0x00,
   0x3e, 0x01, 0x2a, 0x0a,
