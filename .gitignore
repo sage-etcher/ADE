@@ -3,7 +3,8 @@
 **.swp
 **.bak
 
-.cache/**
+**.cache/**
+**/.deps/**
 
 # local specifiec files
 compile_commands.json
