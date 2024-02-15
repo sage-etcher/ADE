@@ -176,6 +176,13 @@ unsigned char adv_prom_0000_0800[0x800] = {
 
 
 ////    GLOBAL VARIABLES
+char *config_dir_path;
+char *cache_dir_path;
+
+char *conf_file;
+char *log_file;
+char *screen_log_file;
+
 
 BYTE *base;
 BYTE blanking_flag=0;

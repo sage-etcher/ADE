@@ -26,6 +26,7 @@ ade_SOURCES = src/ade_base.c \
 			  src/ade_z80.c \
 			  src/jfuncs.c \
 			  src/ade_resources.c \
+			  src/ade_xdg_paths.c \
 			  src/ade.h \
 			  src/ade_charset.h \
 			  src/ade_extvars.h \

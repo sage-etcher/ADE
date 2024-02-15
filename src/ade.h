@@ -42,6 +42,20 @@
 #define LOGFILENAME		"xlog"
 #define SCREENLOGFILENAME 	"screenlog"
 
+
+#define FOLDER_SEP "/"
+#define NULLTERM_PADDING   1
+
+#define ENV_PREFIX "${"
+#define ENV_SUFFIX "}"
+
+#define HOME_ENV           "${HOME}"
+#define XDG_CONFIG_ENV     "${XDG_CONFIG_HOME}"
+#define XDG_CONFIG_DEFAULT "${HOME}/.config"
+#define XDG_CACHE_ENV      "${XDG_CACHE_HOME}"
+#define XDG_CACHE_DEFAULT  "${HOME}/.cache"
+
+
 #define HD	TRUE
 #define PIO	TRUE
 #define SIO	TRUE
@@ -903,3 +917,18 @@ void reset_numlock(void);
 void turn_capslock(int turn_on);
 void turn_numlock(int turn_on);
 void turn_scroll_lock(int turn_on);
+
+char *str_duplicate (const char *src);
+char *get_substring (const char *start, const char *end);
+char *replace_env (const char *raw_str);
+char *replace_env_i (const char *raw_str);
+int is_env (const char *raw_name);
+char *append_path (const char *orig_path, const char *appendee_item);
+int xdg_variables_exist (void);
+const char *xdg_default (const char *xdg_env, const char *xdg_default);
+void set_global_directory_paths (void);
+void set_global_file_paths (void);
+void debug_print_xdg (void);
+void free_xdg_globals (void);
+
+
