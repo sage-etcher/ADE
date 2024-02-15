@@ -183,7 +183,6 @@ char *conf_file;
 char *log_file;
 char *screen_log_file;
 
-
 BYTE *base;
 BYTE blanking_flag=0;
 BYTE cmd_ack_counter;

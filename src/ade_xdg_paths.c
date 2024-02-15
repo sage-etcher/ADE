@@ -1,5 +1,5 @@
 #include "ade.h"
-#include "ade_gvars.h"
+#include "ade_extvars.h"
 
 
 

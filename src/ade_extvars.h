@@ -44,6 +44,13 @@ extern unsigned char adv_prom_0000_0800[0x800] ;
 
 ////    GLOBAL VARIABLES
 
+extern char *config_dir_path;
+extern char *cache_dir_path;
+
+extern char *conf_file;
+extern char *log_file;
+extern char *screen_log_file;
+
 extern BYTE *base;
 extern BYTE blanking_flag;
 extern BYTE cmd_ack_counter;
