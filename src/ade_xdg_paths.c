@@ -229,14 +229,14 @@ set_global_directory_paths (void)
     /* use the XDG_CONFIG_HOME/ADE_CONF_DIR folder if it exists */
     xdg_config_advantage = append_path (xdg_config_home, ADE_CONF_DIR);
     xdg_cache_advantage  = append_path (xdg_cache_home, ADE_CONF_DIR);
-  
+
     /* free the plain variable expansions */
     free (xdg_config_home);
     free (xdg_cache_home);
 
     /* if the XDG config directory has an advantage folder, 
      * use XDG locations */
-    if (is_dir (xdg_config_advantage) == 0)
+    if (is_dir (xdg_config_advantage) == 1)
     {
         /* set the global directories */
         config_dir_path = xdg_config_advantage;
@@ -278,9 +278,9 @@ void
 debug_print_xdg (void)
 {
     printf ("config_dir_path: \"%s\"\n", config_dir_path);
-    printf ("cache_dir_path: \"%s\"\n",  cache_dir_path);
-    printf ("conf_file: \"%s\"\n",       conf_file);
-    printf ("log_file: \"%s\"\n",        log_file);
+    printf ("cache_dir_path:  \"%s\"\n", cache_dir_path);
+    printf ("conf_file:       \"%s\"\n", conf_file);
+    printf ("log_file:        \"%s\"\n", log_file);
     printf ("screen_log_file: \"%s\"\n", screen_log_file);
 }
 
