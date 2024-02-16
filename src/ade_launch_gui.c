@@ -326,27 +326,21 @@ open_log_files (void)
 
   if (DEBUG_TERM)
     {
-      strcpy (nc_logfilename, work_dir);
-      strcat (nc_logfilename, NC_LOGFILENAME);
-      nc_log = fopen (nc_logfilename, "w");
-      if ((nc_log = fopen (nc_logfilename, "w")) == NULL)
+      nc_log = fopen (nc_log_file, "w");
+      if ((nc_log = fopen (nc_log_file, "w")) == NULL)
 	{
-	  printf ("!!!!: nc_log \"%s\" not opened.\n", nc_logfilename);
+	  printf ("!!!!: nc_log \"%s\" not opened.\n", nc_log_file);
 	}
     }
 
 
-  strcpy (logfilename, work_dir);
-  strcat (logfilename, LOGFILENAME);
-  if ((logfile = fopen (logfilename, "w")) == NULL)
+  if ((logfile = fopen (log_file, "w")) == NULL)
     {
-      printf ("!!!!: logfile \"%s\" not opened.\n", logfilename);
+      printf ("!!!!: logfile \"%s\" not opened.\n", log_file);
     }
 
-  strcpy (slogfilename, work_dir);
-  strcat (slogfilename, SCREENLOGFILENAME);
-  if ((slog = fopen (slogfilename, "w")) == NULL)
+  if ((slog = fopen (screen_log_file, "w")) == NULL)
     {
-      printf ("!!!!: slogfile \"%s\" not opened.\n", slogfilename);
+      printf ("!!!!: slogfile \"%s\" not opened.\n", screen_log_file);
     }
 }

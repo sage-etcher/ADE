@@ -50,6 +50,8 @@ extern char *cache_dir_path;
 extern char *conf_file;
 extern char *log_file;
 extern char *screen_log_file;
+extern char *disk_dir;
+extern char *nc_log_file;
 
 extern BYTE *base;
 extern BYTE blanking_flag;

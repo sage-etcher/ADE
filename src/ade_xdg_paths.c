@@ -265,10 +265,15 @@ void
 set_global_file_paths (void)
 {
     set_global_directory_paths ();
+
+    mkdir_p (config_dir_path);
+    mkdir_p (cache_dir_path);
     
-    conf_file = append_path (config_dir_path, ADE_CONF_NAME);
-    log_file = append_path (cache_dir_path, LOGFILENAME);
-    screen_log_file = append_path (cache_dir_path, SCREENLOGFILENAME);
+    conf_file       = append_path (config_dir_path, ADE_CONF_NAME);
+    log_file        = append_path (cache_dir_path,  LOGFILENAME);
+    screen_log_file = append_path (cache_dir_path,  SCREENLOGFILENAME);
+    disk_dir        = append_path (config_dir_path, DISK_FOLDER_NAME);
+    nc_log_file     = append_path (config_dir_path, NC_LOGFILENAME);
     
     return;
 }
@@ -282,6 +287,8 @@ debug_print_xdg (void)
     printf ("conf_file:       \"%s\"\n", conf_file);
     printf ("log_file:        \"%s\"\n", log_file);
     printf ("screen_log_file: \"%s\"\n", screen_log_file);
+    printf ("disk_dir:        \"%s\"\n", disk_dir);
+    printf ("nc_log_file:     \"%s\"\n", nc_log_file);
 }
 
 
@@ -293,6 +300,8 @@ free_xdg_globals (void)
     free (conf_file);
     free (log_file);
     free (screen_log_file);
+    free (disk_dir);
+    free (nc_log_file);
 }
 
 

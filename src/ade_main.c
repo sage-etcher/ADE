@@ -5,10 +5,9 @@ int
 main (int argc, char *argv[])
 {
 
-
   /******************/
+  set_global_file_paths ();
   get_k_locks_start ();
-  set_work_dir ();
   get_config ();
   open_log_files ();
   gtk_init (&argc, &argv);
@@ -18,5 +17,6 @@ main (int argc, char *argv[])
   gtk_main ();
   set_k_locks_end ();
   xlog (ALL, "gtk_main stopped\n");
+  free_xdg_globals ();
   return 0;
 }

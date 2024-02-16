@@ -7,43 +7,22 @@ open_conf_file (void)
 {
   int error = 0;
   int bad_open = 0;
-  char conf_fn[64];
-  char new_dirs[64];
   int dir_ok = 0;
 
-  set_work_dir ();
-  // confname already contains a copy of the app's work_dir
-  // $HOME/XXXXXXXX/
-
-  if ((dir_ok = is_dir (confname)) < 1)
+  if ((dir_ok = is_dir (config_dir_path)) < 1)
     {
-      mkdir_p (confname);
-      strcpy (new_dirs, confname);
-      strcat (new_dirs, "disks");
-      mkdir_p (new_dirs);
+      mkdir_p (config_dir_path);
+      mkdir_p (disk_dir);
     }
 
-  if (!configfileflag)
-    {
-/* generate default config file name */
-      strcpy (conf_fn, "ade");
-      strcat (conf_fn, ".conf");
-      strcat (confname, conf_fn);	// now got $HOME/XXXXXXXX/ade.conf
-    }
-  else
-    {
-/* generate special config file name */
-      strcat (confname, basename (xconfigfilename));
-    }
-
-  xlog (ALL, "ConfName = \"%s\"\n", confname);
-  if ((conf = fopen (confname, "r+")) == NULL)
+  xlog (ALL, "ConfName = \"%s\"\n", conf_file);
+  if ((conf = fopen (conf_file, "r+")) == NULL)
     {
       error = new_config_file ();
-      if ((conf = fopen (confname, "r+")) == NULL)
-	{
-	  bad_open = 1;
-	}
+      if ((conf = fopen (conf_file, "r+")) == NULL)
+	    {
+	      bad_open = 1;
+	    }
     }
 
 
@@ -72,9 +51,9 @@ get_config (void)
     }
   if (conf == NULL)
     {
-      sprintf (vstring, "Can't open conf file \"%s\"\n", confname);
+      sprintf (vstring, "Can't open conf file \"%s\"\n", conf_file);
       status_print (vstring, TRUE);
-      xlog (ALL, "Can't open conf file \"%s\"\n", confname);
+      xlog (ALL, "Can't open conf file \"%s\"\n", conf_file);
     }
   else
     {
@@ -96,7 +75,7 @@ load_configuration (void)
   while ((fgets (cfgbuff, 127, conf)) != NULL)
     {
       if ((cfgbuff[0] != '#') && (strlen (cfgbuff) > 3))
-	{
+	  {
 	  cfgbuff[strlen (cfgbuff) - 1] = '\0';	/*scrub \n from end of second token */
 	  tkey = strtok (cfgbuff, white);
 	  targ = strtok (NULL, white);
@@ -176,19 +155,14 @@ new_config_file (void)
 {
   int error = 0;
   int dir_ok;
-  char newbuff[128];
-  set_work_dir ();
 
-  if ((dir_ok = is_dir (confname)) < 1)
+  if ((dir_ok = is_dir (config_dir_path)) < 1)
     {
-      mkdir_p (confname);
+      mkdir_p (config_dir_path);
       error = 1;		// nor directory, therefor no conf file
     }
-  strcpy (newbuff, confname);
-  strcat (newbuff, "ade.conf");
 
-
-  if ((conf = fopen (newbuff, "w")) == NULL)
+  if ((conf = fopen (conf_file, "w")) == NULL)
     {
       printf ("Unfortunately, we still can't create our config file.");
       error = 2;
@@ -211,24 +185,11 @@ save_configuration (void)
   int k;
   int j;
   max_cfg_key = CKEND;
-//  prepare conf filename
-  set_work_dir ();
-
-  if (!configfileflag)
-    {
-/* generate default config file name */
-      strcat (confname, "ade.conf");
-    }
-  else
-    {
-/* generate special config file name */
-      strcat (confname, basename (xconfigfilename));
-    }
 
 /* 'wipe' config file. (truncate). Reset file-pointer to start */
-  if ((conf = fopen (confname, "w")) == NULL)
+  if ((conf = fopen (conf_file, "w")) == NULL)
     {
-      xlog (ALL, "save_config:  Can't open \"%s\" for writing.\n", confname);
+      xlog (ALL, "save_config:  Can't open \"%s\" for writing.\n", conf_file);
     }
   else
     {
@@ -301,9 +262,6 @@ load_config_parameters (void)
   /* PARAMETERS LOADED FROM CONFIG FILE                    */
 
 
-  strcpy (work_dir, (getenv ("HOME")));	// /home directory
-  strcat (work_dir, "/");	// $HOME/
-  strcat (work_dir, ADE_CONF_DIR);	// $HOME/advantage
   /* hardware slots */
   set_slots_config ();		//need HDC to be installed before loading disks
 /* disk storage */
@@ -402,12 +360,11 @@ load_config_parameters (void)
     }
 
 
-  /* logfile name - NOTE 'work_dir' already ends with a '/' */
-  sprintf (logfilename, "%s%s", work_dir, LOGFILENAME);
-  sprintf (cfg_arg[LOG], "%s%s", work_dir, LOGFILENAME);
+  sprintf (log_file, "%s", log_file);
+  sprintf (cfg_arg[LOG], "%s", log_file);
   /* screenlog name */
-  sprintf (slogfilename, "%s%s", work_dir, SCREENLOGFILENAME);
-  sprintf (cfg_arg[SLOG], "%s%s", work_dir, SCREENLOGFILENAME);
+  sprintf (screen_log_file, "%s", screen_log_file);
+  sprintf (cfg_arg[SLOG], "%s", screen_log_file);
   /*    ioport connections */
   if (strlen (cfg_arg[SIOI]))
     {
@@ -452,17 +409,3 @@ load_config_parameters (void)
 }
 
 
-
-
-void
-set_work_dir (void)
-{
-
-  confname = confnamebuff;
-  xlog (INFO, "PWD= \"%s\"\n", (getenv ("PWD")));
-  strcpy (confname, (getenv ("HOME")));	// USERNAME /home  directory
-  strcat (confname, "/");
-  strcat (confname, "advantage");	// $HOME/XXXXXXXX
-  strcat (confname, "/");	// $HOME/XXXXXXXX/
-  strcpy (work_dir, confname);	/* save the working directory info */
-}

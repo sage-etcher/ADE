@@ -105,16 +105,9 @@ BYTE_to_binary (unsigned char a)
 void
 screen_log (BYTE c)
 {
-  char sfname[128];
   if (slog == NULL)
     {
-      slog = fopen (slogfilename, "w");
-      if (slog == NULL)
-	{
-
-	  sprintf (sfname, "%s/%s", work_dir, SCREENLOGFILENAME);
-	  slog = fopen (sfname, "w");
-	}
+      slog = fopen (screen_log_file, "w");
     }
   fprintf (slog, "%c", c);
 }
@@ -237,17 +230,9 @@ xlog (unsigned int type, const char *msg, ...)
 /* oops. is there a logfile open??? */
       /* first try for logfile in current directory */
       if (logfile == NULL)
-	{
-	  sprintf (logfilename, "%s/%s", work_dir, LOGFILENAME);
-	  logfile = fopen (logfilename, "w");
-	}
-      /* can't do that, so try for /tmp directory */
-      if (logfile == NULL)
-	{
-	  sprintf (logfilename, "%s/%s", work_dir, LOGFILENAME);
-	  logfile = fopen (logfilename, "w");
-	}
-
+	  {
+	    logfile = fopen (log_file, "w+");
+	  }
 
 /* OK, we're sure of a logfile now */
 
@@ -380,10 +365,8 @@ time_now (void)
 char *
 basename (char *filename)
 {
-  char xname[128];
   char *fcptr;
 //keep original filename unchanged
-  strcpy (xname, filename);
 
 // check if any '/' at all. - no '/' then already simple file name
 
@@ -395,8 +378,8 @@ basename (char *filename)
     {
 
 // point fcptr to end of xname
-      fcptr = (xname + strlen (xname));
-      while ((*(fcptr - 1) != '/') && (fcptr >= xname))
+      fcptr = (filename + strlen (filename));
+      while ((*(fcptr - 1) != '/') && (fcptr >= filename))
 	{
 	  fcptr--;
 	}
@@ -413,42 +396,38 @@ basename (char *filename)
 char *
 dirname (char *filename)
 {
-  char xname[128];
+  char *xname;
   char *fcptr;
 
 
-//keep original filename unchanged
-  strcpy (xname, filename);
+  //keep original filename unchanged
+  xname = str_duplicate (filename);
 
-// point fcptr to end of xname = zero-length string
+  // point fcptr to end of xname = zero-length string
   fcptr = (xname + strlen (xname));
 
 
-// check if any '/' at all. - no '/' then already simple file name and no 'dirname'
+  // check if any '/' at all. - no '/' then already simple file name and no 'dirname'
 
-  if (strchr (filename, '/') == NULL)
+  if (strchr (filename, '/') != NULL)
     {
-/* do nothing */
-    }
-  else
-    {
-/*find that '/'*/
+      /*find that '/'*/
 
       while ((*(fcptr) != '/') && (fcptr >= xname))
-	{
-	  fcptr--;
-	}
-//fcptr should now point to '/' before basename
+	    {
+	      fcptr--;
+	    }
+      //fcptr should now point to '/' before basename
       if (*fcptr == '/')
-	{
-	  // chop off basename part, leaving dirname part WITH ending '/'
-	  *(fcptr + 1) = '\0';
-	}
+	    {
+	      // chop off basename part, leaving dirname part WITH ending '/'
+	      *(fcptr + 1) = '\0';
+	    }
       // now  reset fcptr to start of original filename
       fcptr = xname;
 
     }
-//  printf ("DIRNAME: filename=\"%s\":    dirname=\"%s\"\n", filename,  fcptr);
+  //  printf ("DIRNAME: filename=\"%s\":    dirname=\"%s\"\n", filename,  fcptr);
   return (fcptr);
 }
 

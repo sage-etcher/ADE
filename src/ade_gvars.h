@@ -182,6 +182,8 @@ char *cache_dir_path;
 char *conf_file;
 char *log_file;
 char *screen_log_file;
+char *disk_dir;
+char *nc_log_file;
 
 BYTE *base;
 BYTE blanking_flag=0;

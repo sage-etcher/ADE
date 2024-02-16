@@ -35,6 +35,7 @@
 
 #define HWINT1  0x0008
 
+#define DISK_FOLDER_NAME "disks"
 
 #define ADE_CONF_NAME   "ade.conf"
 #define ADE_CONF_DIR	"advantage"
