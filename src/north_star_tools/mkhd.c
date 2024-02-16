@@ -1,7 +1,8 @@
 /****************************************************************************/
 /**                            mkhd                                        **/
-/**                          Version 3.2                                   **/
+/**                          Version 3.3                                   **/
 /**                   Copyright 2012-2019 Jack Strangio                    **/
+/**                   Copyright 2024 Sage I. Hendricks                     **/
 /**                                                                        **/
 /**  mkhd prepares a hard-disk image-file for use with nse. The disk types **/
 /**  specified were the 'standard' hard drives as handled by North Star    **/
@@ -19,12 +20,14 @@
 
 
 
-#define MHVERSION "3.2"
+#define MHVERSION "3.3"
 FILE *hd;
 int transient_len;
 
-#include "transient_hzn.c"	/* data with code of the Horizon   TRANSIENT file */
-#include "transient_adv.c"	/* data with code of the Advantage TRANSIENT file */
+//#include "transient_hzn.c"	/* data with code of the Horizon   TRANSIENT file */
+//#include "transient_adv.c"	/* data with code of the Advantage TRANSIENT file */
+#include "transient_hzn.h"	/* data with code of the Horizon   TRANSIENT file */
+#include "transient_adv.h"	/* data with code of the Advantage TRANSIENT file */
 
 unsigned char bitmap[0x200];
 int hzn_adv_flag;

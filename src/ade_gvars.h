@@ -5,7 +5,8 @@
 /*                       (ADE)                       */
 /*                       GPL V2                      */
 /*      Copyright (C) 1995  Frank D. Cringle.        */
-/*      Copyright (C) 1996-Present Jack Strangio     */
+/*      Copyright (C) 1996-2023  Jack Strangio       */
+/*      Copyright (C) 2024  Sage I. Hendricks        */
 /*                                                   */
 /*****************************************************/
 /********************************************************************************/
@@ -176,6 +177,14 @@ unsigned char adv_prom_0000_0800[0x800] = {
 
 
 ////    GLOBAL VARIABLES
+char *config_dir_path;
+char *cache_dir_path;
+
+char *conf_file;
+char *log_file;
+char *screen_log_file;
+char *disk_dir;
+char *nc_log_file;
 
 BYTE *base;
 BYTE blanking_flag=0;

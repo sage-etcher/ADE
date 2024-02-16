@@ -24,7 +24,7 @@
 // ADE development defines
 #define UNUSED(x)    (void) (x)
 
-#define MAJOR	"0.67"
+#define MAJOR	"0.68"
 // Started 210308
 
 #define NOBEEP FALSE		// mutes annoying beeps during development
@@ -41,6 +41,26 @@
 
 #define LOGFILENAME		"xlog"
 #define SCREENLOGFILENAME 	"screenlog"
+
+/* copyright notic start */
+/* Add XDG Compliance to ADE */
+/* Copyright (C) 2024 Sage Hendricks */
+
+#define DISK_FOLDER_NAME "disks"
+
+#define FOLDER_SEP "/"
+#define NULLTERM_PADDING   1
+
+#define ENV_PREFIX "${"
+#define ENV_SUFFIX "}"
+
+#define HOME_ENV           "${HOME}"
+#define XDG_CONFIG_ENV     "${XDG_CONFIG_HOME}"
+#define XDG_CONFIG_DEFAULT "${HOME}/.config"
+#define XDG_CACHE_ENV      "${XDG_CACHE_HOME}"
+#define XDG_CACHE_DEFAULT  "${HOME}/.cache"
+/* end copyright notice */
+
 
 #define HD	TRUE
 #define PIO	TRUE
@@ -72,7 +92,7 @@
 #endif
 
 #define VERSION_TXT	"Version " MAJOR " "
-#define THIS_YEAR         ",    2020"
+#define THIS_YEAR         ",    2024"
 #define EMU_VERSION	VERSION_TXT HH SS PP THIS_YEAR
 #define NS_EMU_NAME	"North Star Advantage Emulator  "
 
@@ -153,10 +173,10 @@
                         "`x26`y12`XVersion"
 
 #define BANNER_TEXT_2   ",  HF2SP"\
-                        "`x26`y14`X(c) 2017 - 2020 Jack Strangio"\
-                        "`x23`y16`Xyaze code (c) 1995 Frank D. Cringle.`x23`y17`XDAsm code (c) 1999 Marat Fayzullin."\
-                        "`x05`y20`XNorth Star Advantage Emulator (ADE) comes with ABSOLUTELY NO WARRANTY;"\
-                        "`x05`y21`X  for details see the file \"COPYING\" in the documentation directory."
+                        "`x26`y14`X(c) 2017 - 2020 Jack Strangio`x26`y15`X(c) 2024 Sage I. Hendricks"\
+                        "`x23`y17`Xyaze code (c) 1995 Frank D. Cringle.`x23`y18`XDAsm code (c) 1999 Marat Fayzullin."\
+                        "`x05`y21`XNorth Star Advantage Emulator (ADE) comes with ABSOLUTELY NO WARRANTY;"\
+                        "`x05`y22`X  for details see the file \"COPYING\" in the documentation directory."
 
 typedef unsigned char BYTE;
 typedef unsigned short WORD;
@@ -903,3 +923,21 @@ void reset_numlock(void);
 void turn_capslock(int turn_on);
 void turn_numlock(int turn_on);
 void turn_scroll_lock(int turn_on);
+
+/* start */
+/* Add XDG Compliance to ADE */
+/* Copyright (C) 2024 Sage Hendricks */
+char *str_duplicate (const char *src);
+char *get_substring (const char *start, const char *end);
+char *replace_env (const char *raw_str);
+char *replace_env_i (const char *raw_str);
+int is_env (const char *raw_name);
+char *append_path (const char *orig_path, const char *appendee_item);
+int xdg_variables_exist (void);
+const char *xdg_default (const char *xdg_env, const char *xdg_default);
+void set_global_directory_paths (void);
+void set_global_file_paths (void);
+void debug_print_xdg (void);
+void free_xdg_globals (void);
+/* end copyright */
+
