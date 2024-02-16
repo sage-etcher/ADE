@@ -5,9 +5,22 @@ Fork of Jack Strangio's [Advantage Emulator](https://jackstrangio.au/advantage_e
 ## Install
 
 ``` bash
+$ ./extra-file-setup.sh
 $ ./configure
 $ make
 $ sudo make install
+
+$ mkdir -pv $HOME/.config/advantage
+$ pushd $HOME/.config/advantage
+$ ln -sd /usr/local/share/advantage/documentation ./
+$ ln -sd /usr/local/share/advantage/info ./
+$ ln -sd /usr/local/share/advantage/disks ./disks.backup
+$ mkdir -v ./disks
+$ cp -v ./disks.backup/* ./disks/
+$ cp -v /usr/local/share/advantage/ade.conf ./ade.conf
+$ popd
+
+$ ade
 ```
 
 ## License (GPL2)
@@ -15,8 +28,8 @@ $ sudo make install
 Copyright (C) 1996-2023 Jack Strangio  
 Copyright (C) 2024 Sage I. Hendricks  
 
-yaze code (c) 1995 Frank D. Cringle.
-DAsm code (c) 1999 Marat Fayzullin.
+yaze code (c) 1995 Frank D. Cringle  
+DAsm code (c) 1999 Marat Fayzullin  
 
 This program is free software; you can redistribute it and/or modify  
 it under the terms of the GNU General Public License as published by  
