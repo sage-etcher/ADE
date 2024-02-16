@@ -1,3 +1,16 @@
+
+/* This file is part of the North Star Advantage Emulator (ade) */
+/* GPL V2 */
+
+/* Copyright (C) 2024 Sage I. Hendricks 
+ * Modificiations:
+ *   - updated log variables to use globally defined strings, rather than
+ *     generating paths on the fly.
+ *   - updated path string variables to be dynamically allocated char*s
+ *     rather than char[128] arrays. */
+
+
+
 #include "ade.h"
 #include "ade_extvars.h"
 

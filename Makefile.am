@@ -1,5 +1,12 @@
 
-SUBDIRS = src/north_star_tools
+# This file is part of the North Star Advantage Emulator (ade) */
+
+# Makefile.am - automake file
+# Copyright (C) 2024 Sage I. Hendricks */
+# GPL V2 */
+
+
+#SUBDIRS = src/north_star_tools
 
 bin_PROGRAMS = ade
 

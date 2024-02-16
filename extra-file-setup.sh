@@ -1,6 +1,14 @@
 #!/bin/bash
 # Generate files that may be wanted, that aren't covered by automake.
 
+# This file is part of the North Star Advantage Emulator (ade)
+# extra-file-setup.sh
+
+# Copyright (C) 2024 Sage I. Hendricks
+# GPL V2 */
+
+
+
 DESTDIR=./extra
 PREFIX=/usr/local
 BIN_DIR=$PREFIX/bin

@@ -1,7 +1,8 @@
 /****************************************************************************/
 /**                            mkhd                                        **/
-/**                          Version 3.2                                   **/
+/**                          Version 3.3                                   **/
 /**                   Copyright 2012-2019 Jack Strangio                    **/
+/**                   Copyright 2024 Sage I. Hendricks                     **/
 /**                                                                        **/
 /**  mkhd prepares a hard-disk image-file for use with nse. The disk types **/
 /**  specified were the 'standard' hard drives as handled by North Star    **/
@@ -19,7 +20,7 @@
 
 
 
-#define MHVERSION "3.2"
+#define MHVERSION "3.3"
 FILE *hd;
 int transient_len;
 

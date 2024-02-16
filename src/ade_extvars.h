@@ -12,7 +12,8 @@
 /*                       (ADE)                       */
 /*                       GPL V2                      */
 /*      Copyright (C) 1995  Frank D. Cringle.        */
-/*      Copyright (C) 1996-Present Jack Strangio     */
+/*      Copyright (C) 1996-2023  Jack Strangio       */
+/*      Copyright (C) 2024  Sage I. Hendricks         */
 /*                                                   */
 /*****************************************************/
 /********************************************************************************/

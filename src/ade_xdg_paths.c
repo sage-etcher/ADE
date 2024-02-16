@@ -1,3 +1,12 @@
+
+/* This file is part of the North Star Advantage Emulator (ade) */
+/* ade_xdg_paths.c - allow the program to reference XDG_CONFIG_HOME and
+ *                   XDG_CACHE_HOME variables if the advantage folder is
+ *                   present as such. */
+
+/* Copyright (C) 2024 Sage I. Hendricks */
+/* GPL V2 */
+
 #include "ade.h"
 #include "ade_extvars.h"
 

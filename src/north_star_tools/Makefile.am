@@ -1,4 +1,13 @@
 
+# This file is part of the northstar-unix tools for both ADE and NSE */
+# north_star_tools/Makefile.in - automake makefile template
+
+# Heavily based on the original Makefile 
+
+# Copyright (C) 1995-2017 Jack Strangio
+# Copyright (C) 2024 Sage I. Hendricks
+# GPL2 */
+
 bin_PROGRAMS = chk_sector \
 			   compact \
 			   jdz80 \

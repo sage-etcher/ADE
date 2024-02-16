@@ -1,3 +1,12 @@
+
+/* License: GPL V2 */
+
+/* Copyright (C) Sage I. Hendricks
+ * Modifications:
+ *   Removed the use of set_work_dir(). Implemented calls to set and free
+ *   XDG compatible file paths.
+ * */
+
 #include "ade.h"
 #include "ade_gvars.h"
 

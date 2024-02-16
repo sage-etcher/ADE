@@ -1,3 +1,13 @@
+
+/* This file is part of the North Star Advantage Emulator (ade) */
+/* GPL V2 */
+
+/* Copyright (C) 2024 Sage I. Hendricks
+ * Modifications:
+ *   Updated open_log_files() to use the new global logfilepath variables
+ *   introduced in ade_xdg_paths.c
+ * */
+
 #include "ade.h"
 #include "ade_extvars.h"
 
@@ -316,7 +326,6 @@ build_main_widgets_from_gresources (void)
   gtk_builder_connect_signals (builder, NULL);
   g_object_unref (builder);
 }
-
 
 
 
