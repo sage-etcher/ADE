@@ -17,6 +17,9 @@ DATA_DIR=$PREFIX/share/advantage
 EXEC=$BIN_DIR/ade
 ICON=$DATA_DIR/.star_7point_red.png
 
+CACHE=$HOME/.cache/advantage
+CONFIG=$HOME/.config/advantage
+
 # src/ade_resources.c
 src/mk_resource_xml ade
 glib-compile-resources  --sourcedir=gresources --target=src/ade_resources.c \
@@ -26,5 +29,5 @@ glib-compile-resources  --sourcedir=gresources --target=src/ade_resources.c \
 src/mklauncher.new $EXEC $ICON $DESTDIR
 
 # extra/ade.conf
-src/mkinitialconf.new $PREFIX $DESTDIR
+src/mkinitialconf.new $CACHE $CONFIG $DESTDIR/ade.conf
 
