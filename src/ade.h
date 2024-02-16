@@ -24,7 +24,7 @@
 // ADE development defines
 #define UNUSED(x)    (void) (x)
 
-#define MAJOR	"0.67"
+#define MAJOR	"0.68"
 // Started 210308
 
 #define NOBEEP FALSE		// mutes annoying beeps during development
