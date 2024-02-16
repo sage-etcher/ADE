@@ -2,6 +2,14 @@
 
 Fork of Jack Strangio's [Advantage Emulator](https://jackstrangio.au/advantage_emulator.html).
 
+## Install
+
+``` bash
+$ ./configure
+$ make
+$ sudo make install
+```
+
 ## License (GPL2)
 
 Copyright (C) 1996-2023 Jack Strangio  
