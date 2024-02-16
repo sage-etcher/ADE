@@ -6,7 +6,7 @@
 # GPL V2 */
 
 
-#SUBDIRS = src/north_star_tools
+SUBDIRS = src/north_star_tools
 
 bin_PROGRAMS = ade
 
