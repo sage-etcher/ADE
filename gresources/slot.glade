@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="slot_top">
+    <property name="name">slot_top</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Install Peripheral Cards in Hardware Slots</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="deletable">False</property>
+    <property name="gravity">east</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="slot_grid">
+        <property name="name">slot_grid</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="sio_label">
+            <property name="name">sio_label</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin_top">1</property>
+            <property name="label" translatable="yes">SIO Serial Port Card Not Installed</property>
+            <property name="xalign">0.039999999105930328</property>
+            <property name="yalign">0.5</property>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="sio_card">
+            <property name="name">sio_card</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">SIO Card</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">55</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="sh_box">
+            <property name="name">sh_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="sunused">
+                <property name="label" translatable="yes">Not Used</property>
+                <property name="name">sunused</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_0_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s1button">
+                <property name="label" translatable="yes">Slot  1</property>
+                <property name="name">s1button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_1_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s2 button">
+                <property name="label" translatable="yes">Slot  2</property>
+                <property name="name">s2button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_2_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s3button">
+                <property name="label" translatable="yes">Slot  3</property>
+                <property name="name">s3button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_3_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s4button">
+                <property name="label" translatable="yes">Slot  4</property>
+                <property name="name">s4button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_4_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s5button">
+                <property name="label" translatable="yes">Slot  5</property>
+                <property name="name">s5button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_5_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="s6button">
+                <property name="label" translatable="yes">Slot  6</property>
+                <property name="name">s6button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_6_sx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">70</property>
+            <property name="y">55</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_label">
+            <property name="name">pio_label</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">PIO Parallel Port Card Not Installed </property>
+            <property name="xalign">0.039999999105930328</property>
+            <property name="yalign">0.5</property>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pio_card">
+            <property name="name">pio_card</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">PIO Card</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">155</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="ph_box">
+            <property name="name">ph_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="punused">
+                <property name="label" translatable="yes">Not Used</property>
+                <property name="name">punused</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_0_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p1button">
+                <property name="label" translatable="yes">Slot  1     </property>
+                <property name="name">p1button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_1_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p2button">
+                <property name="label" translatable="yes">Slot  2     </property>
+                <property name="name">p2button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_2_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p3button">
+                <property name="label" translatable="yes">Slot  3      </property>
+                <property name="name">p3button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_3_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p4button">
+                <property name="label" translatable="yes">Slot  4     </property>
+                <property name="name">p4button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_4_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p5button">
+                <property name="label" translatable="yes">Slot  5     </property>
+                <property name="name">p5button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_5_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="p6button">
+                <property name="label" translatable="yes">Slot 6      </property>
+                <property name="name">p6button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_6_px" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">70</property>
+            <property name="y">155</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="hdc_label">
+            <property name="name">hdc_label</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">HDC Hard Drive Controller Card Not Installed</property>
+            <property name="xalign">0.039999999105930328</property>
+            <property name="yalign">0.5</property>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="hdc_card">
+            <property name="name">hdc_card</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">HDC Card</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">255</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="hdh_box">
+            <property name="name">hdh_box</property>
+            <property name="width_request">120</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkButton" id="hunused">
+                <property name="label" translatable="yes">Not Used</property>
+                <property name="name">hunused</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_0_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h1button">
+                <property name="label" translatable="yes">Slot  1     </property>
+                <property name="name">h1button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_1_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h2button">
+                <property name="label" translatable="yes">Slot  2     </property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_2_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h3button">
+                <property name="label" translatable="yes">Slot  3      </property>
+                <property name="name">h3button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_3_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h4button">
+                <property name="label" translatable="yes">Slot  4     </property>
+                <property name="name">h4button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_4_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h5button">
+                <property name="label" translatable="yes">Slot  5     </property>
+                <property name="name">h5button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_5_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="h6button">
+                <property name="label" translatable="yes">Slot  6     </property>
+                <property name="name">h6button</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="slot_6_hx" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">6</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">70</property>
+            <property name="y">255</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="slothidebutton">
+            <property name="label" translatable="yes">Dismiss</property>
+            <property name="name">slothidebutton</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="slot_hide" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">577</property>
+            <property name="y">307</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,2 +1,0 @@
-FODE      - memory fill with 00H from 0000 to 4FFF video RAM
-

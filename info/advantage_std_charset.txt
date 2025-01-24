@@ -6,16 +6,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x20   " "      Stored at 0561H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -23,16 +23,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x21   "!"      Stored at 0568H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -40,16 +40,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x22   """      Stored at 056FH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . H . .
+       . . . H . H . .
+       . . . H . H . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -57,16 +57,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x23   "#"      Stored at 0576H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 1 0 1 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . H . .
+       . . . H . H . .
+       . . H H H H H .
+       . . . H . H . .
+       . . H H H H H .
+       . . . H . H . .
+       . . . H . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -74,16 +74,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x24   "$"      Stored at 057DH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 1 0
-       0 0 1 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 1 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . H H H H .
+       . . H . H . . .
+       . . . H H H . .
+       . . . . H . H .
+       . . H H H H . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -91,16 +91,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x25   "%"      Stored at 0584H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 0 0 1 0
-       0 0 1 1 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 1 1 0
-       0 0 1 0 0 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H . . H .
+       . . H H . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H . . H H .
+       . . H . . H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -108,16 +108,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x26   "&"      Stored at 058BH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 0 1 0 0
-       0 0 0 1 1 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . . . .
+       . . H . H . . .
+       . . H . H . . .
+       . . . H . . . .
+       . . H . H . H .
+       . . H . . H . .
+       . . . H H . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -125,16 +125,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x27   "'"      Stored at 0592H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -142,16 +142,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x28   "("      Stored at 0599H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -159,16 +159,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x29   ")"      Stored at 05A0H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -176,16 +176,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2A   "*"      Stored at 05A7H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 1 0 1 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 1 0 1 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . H . H . H .
+       . . . H H H . .
+       . . . . H . . .
+       . . . H H H . .
+       . . H . H . H .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -193,16 +193,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2B   "+"      Stored at 05AEH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . H H H H H .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -210,16 +210,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2C   ","      Stored at 05B5H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -227,16 +227,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2D   "-"      Stored at 05BCH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -244,16 +244,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2E   "."      Stored at 05C3H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -261,50 +261,50 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x2F   "/"      Stored at 05CAH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . H .
+       . . . . . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
 
 
-  CHAR 0x30   "0"      Stored at 05D1H from start of PROM
+  CHAR 0x3.   "."      Stored at 05D1H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 1 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 1 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-
-
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . H H .
+       . . H . H . H .
+       . . H H . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
-  CHAR 0x31   "1"      Stored at 05D8H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+
+  CHAR 0x3H   "H"      Stored at 05D8H from start of PROM
+
+       . . . . . . . .
+       . . . . H . . .
+       . . . H H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -312,16 +312,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x32   "2"      Stored at 05DFH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 1 1 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . . . . . H .
+       . . . . H H . .
+       . . . H . . . .
+       . . H . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -329,16 +329,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x33   "3"      Stored at 05E6H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . H .
+       . . . . . H . .
+       . . . . H H . .
+       . . . . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -346,16 +346,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x34   "4"      Stored at 05EDH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . H . .
+       . . . . H H . .
+       . . . H . H . .
+       . . H . . H . .
+       . . H H H H H .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -363,16 +363,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x35   "5"      Stored at 05F4H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . H . . . . .
+       . . H H H H . .
+       . . . . . . H .
+       . . . . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -380,16 +380,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x36   "6"      Stored at 05FBH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 1 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H H . .
+       . . . H . . . .
+       . . H . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -397,16 +397,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x37   "7"      Stored at 0602H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -414,16 +414,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x38   "8"      Stored at 0609H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -431,16 +431,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x39   "9"      Stored at 0610H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 1 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H H .
+       . . . . . . H .
+       . . . . . H . .
+       . . . H H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -448,16 +448,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3A   ":"      Stored at 0617H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -465,16 +465,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3B   ";"      Stored at 061EH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -482,16 +482,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3C   "<"      Stored at 0625H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -499,16 +499,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3D   "="      Stored at 062CH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -516,16 +516,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3E   ">"      Stored at 0633H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -533,50 +533,50 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x3F   "?"      Stored at 063AH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
 
 
-  CHAR 0x40   "@"      Stored at 0641H from start of PROM
+  CHAR 0x4.   "@"      Stored at 0641H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 1 1 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-
-
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . H H H .
+       . . H . H . H .
+       . . H . H H H .
+       . . H . . . . .
+       . . . H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
-  CHAR 0x41   "A"      Stored at 0648H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+
+  CHAR 0x4H   "A"      Stored at 0648H from start of PROM
+
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -584,16 +584,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x42   "B"      Stored at 064FH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -601,16 +601,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x43   "C"      Stored at 0656H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -618,16 +618,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x44   "D"      Stored at 065DH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -635,16 +635,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x45   "E"      Stored at 0664H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H H H H . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -652,16 +652,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x46   "F"      Stored at 066BH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H H H H . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -669,16 +669,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x47   "G"      Stored at 0672H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 1 1 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . H H H .
+       . . H . . . H .
+       . . . H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -686,16 +686,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x48   "H"      Stored at 0679H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -703,16 +703,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x49   "I"      Stored at 0680H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -720,16 +720,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4A   "J"      Stored at 0687H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 1 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 0 1 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H H H .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . H . . H . .
+       . . . H H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -737,16 +737,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4B   "K"      Stored at 068EH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 1 0 0 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . H . .
+       . . H . H . . .
+       . . H H . . . .
+       . . H . H . . .
+       . . H . . H . .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -754,16 +754,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4C   "L"      Stored at 0695H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -771,16 +771,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4D   "M"      Stored at 069CH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 0 1 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H H . H H .
+       . . H . H . H .
+       . . H . H . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -788,16 +788,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4E   "N"      Stored at 06A3H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 0 0 1 0
-       0 0 1 1 0 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 0 1 1 0
-       0 0 1 0 0 1 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H H . . H .
+       . . H H . . H .
+       . . H . H . H .
+       . . H . . H H .
+       . . H . . H H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -805,50 +805,50 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x4F   "O"      Stored at 06AAH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
 
 
-  CHAR 0x50   "P"      Stored at 06B1H from start of PROM
+  CHAR 0x5.   "P"      Stored at 06B1H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-
-
+       . . . . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
-  CHAR 0x51   "Q"      Stored at 06B8H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 0 1 0 0
-       0 0 0 1 1 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+
+  CHAR 0x5H   "Q"      Stored at 06B8H from start of PROM
+
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . H . H .
+       . . H . . H . .
+       . . . H H . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -856,16 +856,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x52   "R"      Stored at 06BFH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . H . H . . .
+       . . H . . H . .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -873,16 +873,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x53   "S"      Stored at 06C6H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . . .
+       . . . H H H . .
+       . . . . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -890,16 +890,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x54   "T"      Stored at 06CDH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -907,16 +907,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x55   "U"      Stored at 06D4H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -924,16 +924,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x56   "V"      Stored at 06DBH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H . H . .
+       . . . H . H . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -941,16 +941,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x57   "W"      Stored at 06E2H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . H . H .
+       . . H . H . H .
+       . . H . H . H .
+       . . . H . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -958,16 +958,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x58   "X"      Stored at 06E9H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H . H . .
+       . . . . H . . .
+       . . . H . H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -975,16 +975,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x59   "Y"      Stored at 06F0H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H . H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -992,16 +992,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5A   "Z"      Stored at 06F7H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1009,16 +1009,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5B   "["      Stored at 06FEH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1026,16 +1026,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5C   "\"      Stored at 0705H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . H .
+       . . . . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1043,16 +1043,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5D   "]"      Stored at 070CH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1060,16 +1060,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5E   "^"      Stored at 0713H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . H . H . .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1077,50 +1077,50 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x5F   "_"      Stored at 071AH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 1 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H H . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
 
 
-  CHAR 0x60   "`"      Stored at 0721H from start of PROM
+  CHAR 0x6.   "`"      Stored at 0721H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-
-
+       . . . . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
-  CHAR 0x61   "a"      Stored at 0728H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+
+  CHAR 0x6H   "a"      Stored at 0728H from start of PROM
+
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H H . . .
+       . . . . . H . .
+       . . H H H H . .
+       . . H . . H . .
+       . . . H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1128,16 +1128,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x62   "b"      Stored at 072FH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1145,16 +1145,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x63   "c"      Stored at 0736H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . H H H H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1162,16 +1162,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x64   "d"      Stored at 073DH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 1 1 1 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . H .
+       . . . . . . H .
+       . . . H H H H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1179,16 +1179,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x65   "e"      Stored at 0744H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H H H H H .
+       . . H . . . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1196,16 +1196,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x66   "f"      Stored at 074BH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 1 0 0
-       0 0 0 1 0 0 1 0
-       0 0 0 1 0 0 0 0
-       0 0 1 1 1 1 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H H . .
+       . . . H . . H .
+       . . . H . . . .
+       . . H H H H . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1213,16 +1213,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x67   "g"      Stored at 0752H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 1 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H H . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H H .
+       . . . . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1230,16 +1230,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x68   "h"      Stored at 0759H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 1 1 0 0
-       0 0 1 1 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . H H . .
+       . . H H . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1247,16 +1247,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x69   "i"      Stored at 0760H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1264,16 +1264,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6A   "j"      Stored at 0767H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H . . . . H . .
+       . . . . . . . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . . . H . .
+       . . . H . H . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1281,16 +1281,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6B   "k"      Stored at 076EH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 1 0 0 0 0
-       0 0 1 0 1 0 0 0
-       0 0 1 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . H . .
+       . . H . H . . .
+       . . H H . . . .
+       . . H . H . . .
+       . . H . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1298,16 +1298,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6C   "l"      Stored at 0775H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1315,16 +1315,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6D   "m"      Stored at 077CH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 0 1 0 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H . H . .
+       . . H . H . H .
+       . . H . H . H .
+       . . H . H . H .
+       . . H . H . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1332,16 +1332,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6E   "n"      Stored at 0783H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 1 1 0 0
-       0 0 1 1 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . H H . .
+       . . H H . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1349,50 +1349,50 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x6F   "o"      Stored at 078AH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
 
 
-  CHAR 0x70   "p"      Stored at 0791H from start of PROM
+  CHAR 0x7.   "p"      Stored at 0791H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 1 1 1 1 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-
-
+       . . . . . . . .
+       H H H H H H . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H H H H . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
-  CHAR 0x71   "q"      Stored at 0798H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 1 0 1 1 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 1 0 0 1 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+
+  CHAR 0x7H   "q"      Stored at 0798H from start of PROM
+
+       . . . . . . . .
+       H H . H H H . .
+       . . H . . H . .
+       . . H . . H . .
+       . . H . . H . .
+       . . . H H H . .
+       . . . . . H . .
+       . . . . . H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1400,16 +1400,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x72   "r"      Stored at 079FH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 1 1 0 0
-       0 0 1 1 0 0 1 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . H H . .
+       . . H H . . H .
+       . . H . . . . .
+       . . H . . . . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1417,16 +1417,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x73   "s"      Stored at 07A6H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 1 1 1 1 0
-       0 0 1 0 0 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 1 0
-       0 0 1 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . H H H H .
+       . . H . . . . .
+       . . . H H H . .
+       . . . . . . H .
+       . . H H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1434,16 +1434,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x74   "t"      Stored at 07ADH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H H H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1451,16 +1451,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x75   "u"      Stored at 07B4H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 1 1 0
-       0 0 0 1 1 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . H H .
+       . . . H H . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1468,16 +1468,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x76   "v"      Stored at 07BBH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . . H . H . .
+       . . . H . H . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1485,16 +1485,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x77   "w"      Stored at 07C2H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 1 0 1 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . H . H .
+       . . H . H . H .
+       . . . H . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1502,16 +1502,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x78   "x"      Stored at 07C9H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 1 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 1 0 0
-       0 0 1 0 0 0 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H . . . H .
+       . . . H . H . .
+       . . . . H . . .
+       . . . H . H . .
+       . . H . . . H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1519,16 +1519,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x79   "y"      Stored at 07D0H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       1 1 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 0 1 0
-       0 0 1 0 0 1 1 0
-       0 0 0 1 1 0 1 0
-       0 0 0 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       H H H . . . H .
+       . . H . . . H .
+       . . H . . . H .
+       . . H . . H H .
+       . . . H H . H .
+       . . . . . . H .
+       . . . H H H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1536,16 +1536,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x7A   "z"      Stored at 07D7H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 1 1 1 1 1 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . H H H H H .
+       . . . . . H . .
+       . . . . H . . .
+       . . . H . . . .
+       . . H H H H H .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1553,16 +1553,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x7B   "{"      Stored at 07DEH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1570,16 +1570,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x7C   "|"      Stored at 07E5H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1587,16 +1587,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x7D   "}"      Stored at 07ECH from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 0 1 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 0 1 0 0 0
-       0 0 0 1 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . H . . . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . . . H . .
+       . . . . H . . .
+       . . . . H . . .
+       . . . H . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 
@@ -1604,16 +1604,16 @@ zeroes bring the total rows for each char to ten rows of 8 bits.
 
   CHAR 0x7E   "~"      Stored at 07F3H from start of PROM
 
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 1 0
-       0 0 0 1 1 1 0 0
-       0 0 1 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
-       0 0 0 0 0 0 0 0
+       . . . . . . . .
+       . . . . . . H .
+       . . . H H H . .
+       . . H . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
+       . . . . . . . .
 
 
 

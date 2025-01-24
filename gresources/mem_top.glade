@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="memtw">
+    <property name="name">memtw</property>
+    <property name="can_focus">False</property>
+    <property name="has_focus">True</property>
+    <property name="title" translatable="yes">RAM DISPLAY</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="type_hint">notification</property>
+    <property name="gravity">south-east</property>
+    <signal name="destroy" handler="topwindow_destroy" swapped="no"/>
+    <signal name="key-press-event" handler="mem_key" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="memgrid">
+        <property name="name">memgrid</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow" id="memscrl">
+            <property name="name">memscrl</property>
+            <property name="width_request">600</property>
+            <property name="height_request">600</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTextView" id="memtext">
+                <property name="name">memtext</property>
+                <property name="width_request">595</property>
+                <property name="height_request">595</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="monospace">True</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="memhide">
+            <property name="label" translatable="yes">Dismiss</property>
+            <property name="name">memhide</property>
+            <property name="width_request">30</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="mem_hide" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">539</property>
+            <property name="y">616</property>
+          </packing>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>

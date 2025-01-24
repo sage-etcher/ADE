@@ -1,5 +1,0 @@
-#!/bin/bash
-#
-#jvs script
-#
-$EDITOR $HOME/.aderc
