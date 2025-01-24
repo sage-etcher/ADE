@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+#
+echo " "
+echo " "
+echo " "
+echo " "
+echo "Runs ADE using a config-file 'aderc.hdos' that specifies"
+echo " bootdisk floppy 'adv_ghdos_200.nsi'"
+echo "                  (Advantage GDOS/GHDOS Vers 2.0.0)"
+echo " "
+echo " The hard drive configured in this script is a 5 megabyte hard"
+echo " drive of the SG5A type and 'should' work with this GDOS version."
+echo " "
+echo "         F1 is the Help-Key within the ADE Emulator."
+echo " "
+
+#comment out next 2 lines below to stop pause
+echo -n " Hit 'Return' to continue, 'Control-C' to stop.  "
+read ANS
+
+echo " "
+echo " "
+echo "             ADE initiated ......"
+
+./ade -c aderc.hdos
+
+

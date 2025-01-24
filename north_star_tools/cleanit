@@ -1,0 +1,16 @@
+#!/bin/bash
+# jvs script
+# cleans development tree of backup files and debug logs
+#
+find . | grep xlog > /tmp/yuk          # jacks debug logfile
+find . | grep screenlog >> /tmp/yuk	#jacks screen output file
+find . | grep printout >> /tmp/yuk      # jacks serial2 out file
+find . | grep parlout >> /tmp/yuk       # jacks parallel-out file
+find . | grep \\~$ >> /tmp/yuk	       # jacks editor backup files
+find . | grep \\.o$ >> /tmp/yuk         # obj files
+
+for x in `cat /tmp/yuk`
+do
+rm $x
+done
+rm /tmp/yuk

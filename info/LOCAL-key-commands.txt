@@ -1,0 +1,17 @@
+ctl A	Reverse Video On
+ctl B	Reverse Video Off
+ctl D	Reset Terminal Modes to Normal
+ctl E	Key Clicks On
+ctl F	Key Clicks Off
+ctl Q	Smooth Scrolling On - Fast
+ctl R	Hybrid Mode On
+ctl S	Hybrid Mode Off
+ctl T	Smooth Scrolling On - Slow
+ctl U	Smooth Scrolling Off
+ctl X	Cursor On
+ctl Y	Cursor Off
+ctl \	Screen On
+ctl ]	Screen Off
+Esc $	Auto-Wraparound On
+Esc %	Auto-Wraparound Off
+
