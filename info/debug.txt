@@ -1,0 +1,21 @@
+/**                    Debugging BitMap                       **/
+/* one or more values added to allow less or more debugging    */
+/* information to be logged. default log file is called 'xlog' */
+
+#define DISASS           0x01
+#define MOTHERBOARD      0x02
+#define DEV              0x04
+#define MEM              0x08
+#define FDC              0x10
+#define HDC              0x20
+#define BIOS_EMULATE     0x40
+#define CMD             0x080 /*or STATUS*/
+#define TERM            0x100
+#define CLI             0x200
+#define QUEUE           0x400
+#define X11            0x0800
+#define XEVENT         0x1000
+#define KEYB           0x2000
+#define INFO           0x4000
+#define TRAP          0x08000
+#define ALL           0x10000

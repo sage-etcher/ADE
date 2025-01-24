@@ -1,0 +1,33 @@
+ADE Advanatge Emulator README FILE
+
+
+Quick Start:
+
+Untar the distribution file and cd to the top directory.
+
+If you have the normal Linux development packages installed, that's great.
+
+If you have the GTK+ development package installed, that's even better.
+
+In that case, issue the command
+
+       make
+
+If all compiles properly, isuue the commands
+
+
+       make install
+ and
+       ade
+
+
+Otherwise:
+
+cd to the 'documentation' and read Section 2 of the 'North Star Advantage (ADE) User's Guide'.
+
+Better still, read the whole guide first.
+
+Enjoy.
+
+
+

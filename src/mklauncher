@@ -1,0 +1,31 @@
+#!/bin/bash
+if [[ "$1" != "" ]]
+then
+EXEC=$1
+else
+EXEC=ade
+fi
+
+if [ -e $HOME/Desktop ]
+then
+
+
+
+export DT=$HOME/Desktop/advantage.desktop
+export DL=$HOME/.local/share/applications
+
+
+# Desktop Icon
+rm -f $DT
+echo "[Desktop Entry]" > $DT
+echo "Version=1.0" >> $DT
+echo "Type=Application" >> $DT
+echo "Terminal=false" >> $DT
+echo "Exec=$EXEC" >> $DT
+echo "Icon=$HOME/advantage/.star_7point_red.png" >> $DT
+echo "Name=North Star Advantage Emulator" >> $DT
+echo "Comment=North Star Advantage Emulator" >> $DT
+chmod 755 $DT
+cp $DT $DL
+
+fi

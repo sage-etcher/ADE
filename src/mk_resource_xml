@@ -1,0 +1,43 @@
+#!/bin/bash
+# makes 'xxx_gresource.xml' files for template
+#
+
+if [ "$1" = "" ]
+then 
+XNAME=xxx
+else
+XNAME=$1
+fi
+
+rm *_gresource.xml
+FXML=${XNAME}_gresource.xml
+XTOP=$PWD
+#start with preamble
+echo '<?xml version="1.0" encoding="UTF-8"?>' > $FXML
+echo '<gresources>' >> $FXML
+# now the resource prefix
+echo "  <gresource prefix=\"/au/com/itelsoft/${XNAME}\">" >> $FXML
+
+#now all the reources, first the images
+cd gresources
+ls *.png > ../pngs
+cd $XTOP
+for x in $(cat pngs)
+do
+echo "<file>${x}</file>" >> $FXML
+done
+rm pngs
+
+#then the glade files
+cd gresources
+ls *.glade > ../glades
+cd $XTOP
+for x in $(cat glades)
+do
+echo "<file preprocess=\"xml-stripblanks\">${x}</file>" >> $FXML
+done
+rm glades
+
+#lastly the terminators
+echo "  </gresource>" >> $FXML
+echo "</gresources>" >> $FXML

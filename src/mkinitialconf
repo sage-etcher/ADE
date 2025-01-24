@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# $1 is current date
+#
+CF=/home/$LOGNAME/advantage/ade.conf
+#
+echo "##### Initial Configuration File for North Star ADE Emulator (c) $1" > $CF
+echo "#####" >> $CF
+echo "##### Avoid Editing This File Manually. Any Changes You Make May" >> $CF
+echo "##### Be Automatically Overwritten at Any Time." >> $CF
+echo " " >> $CF
+echo "hdd           /home/$LOGNAME/advantage/disks/ADV_SG5A.NHD " >> $CF
+echo "fd1           /home/$LOGNAME/advantage/disks/CPMBASIC_120A1.NSI" >> $CF
+echo "fd2           " >> $CF
+echo "disk_dir      /home/$LOGNAME/advantage/disks/" >> $CF
+echo "debug_level   0000" >> $CF
+echo "break_addr    0000" >> $CF
+echo "break_on      off" >> $CF
+echo "trap_addr     FFFE" >> $CF
+echo "trap_on       off" >> $CF
+echo "hd_delay      off" >> $CF
+echo "capslock      off" >> $CF
+echo "cursor_lock   off" >> $CF
+echo "log           /home/$LOGNAME/advantage/xlog" >> $CF
+echo "screenlog     /home/$LOGNAME/advantage/screenlog" >> $CF
+echo "slot_hdc      6" >> $CF
+echo "slot_sio      2" >> $CF
+echo "slot_pio      1" >> $CF
+echo "sio_in        ">> $CF
+echo "sio_out       ">> $CF
+echo "pio_in         " >> $CF
+echo "pio_out        " >> $CF

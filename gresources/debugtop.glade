@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="debugtop">
+    <property name="name">debugtop</property>
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Set Debug Configuration</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="deletable">False</property>
+    <property name="gravity">center</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="debuggrid">
+        <property name="name">debuggrid</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+
+        <child>
+          <object class="GtkLabel" id="dbgvallabel">
+            <property name="name">dbgvallabel</property>
+            <property name="width_request">30</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Debug Value (Hex)</property>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="debugvalue">
+            <property name="name">debugvalue</property>
+            <property name="width_request">40</property>
+            <property name="height_request">10</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="width_chars">4</property>
+            <property name="max_width_chars">4</property>
+            <property name="overwrite_mode">True</property>
+            <signal name="activate" handler="get_dbg_new_value" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">236</property>
+            <property name="y">5</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkButton" id="setall">
+            <property name="label" translatable="yes">Set All</property>
+            <property name="name">setall</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <signal name="clicked" handler="set_all_debug" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">22</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb001">
+            <property name="label" translatable="yes">0001          Disassembly</property>
+            <property name="name">dcb001</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0001" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb002">
+            <property name="label" translatable="yes">0002           Motherboard I/O</property>
+            <property name="name">dcb002</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0002" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">80</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb004">
+            <property name="label" translatable="yes">0004          Development Logging</property>
+            <property name="name">dcb004</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0004" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb008">
+            <property name="label" translatable="yes">0008          RAM Registers</property>
+            <property name="name">dcb008</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0008" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">120</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb010">
+            <property name="label" translatable="yes">0010          Floppy Disk Controller</property>
+            <property name="name">dcb010</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0010" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb020">
+            <property name="label" translatable="yes">0020          Hard Disk Controller</property>
+            <property name="name">dcb020</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0020" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb040">
+            <property name="label" translatable="yes">0040          Bios Emulation</property>
+            <property name="name">dcb040</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0040" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb080">
+            <property name="label" translatable="yes">0080          Command / Status</property>
+            <property name="name">dcb080</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0080" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb100">
+            <property name="label" translatable="yes">0100          Terminal</property>
+            <property name="name">dcb100</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0100" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb200">
+            <property name="label" translatable="yes">0200          Command Line</property>
+            <property name="name">dcb200</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0200" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">240</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb400">
+            <property name="label" translatable="yes">0400          Queues</property>
+            <property name="name">dcb400</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0400" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb800">
+            <property name="label" translatable="yes">0800          X11 Activity</property>
+            <property name="name">dcb800</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx0800" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkCheckButton" id="dcb1000">
+            <property name="label" translatable="yes">1000          XEvent</property>
+            <property name="name">dcb1000</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx1000" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb2000">
+            <property name="label" translatable="yes">2000          Keyboard</property>
+            <property name="name">dcb2000</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx2000" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">320</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb4000">
+            <property name="label" translatable="yes">4000           Information</property>
+            <property name="name">dcb4000</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx4000" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">340</property>
+          </packing>
+        </child>
+
+
+        <child>
+          <object class="GtkCheckButton" id="dcb8000">
+            <property name="label" translatable="yes">8000          Trap Activity</property>
+            <property name="name">dcb8000</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="dbgx8000" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">360</property>
+          </packing>
+        </child>
+
+
+
+
+        <child>
+          <object class="GtkButton" id="clearall">
+            <property name="label" translatable="yes">Clear All</property>
+            <property name="name">clearall</property>
+            <property name="width_request">15</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <signal name="clicked" handler="clear_all_debug" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="debugexit">
+            <property name="label" translatable="yes">Dismiss</property>
+            <property name="name">debugexit</property>
+            <property name="width_request">40</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="debug_exit" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">340</property>
+            <property name="y">390</property>
+          </packing>
+        </child>
+
+
+
+
+      </object>
+    </child>
+  </object>
+</interface>
